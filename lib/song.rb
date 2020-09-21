@@ -43,6 +43,6 @@ class Song
   end
   
   def self.new_from_filename(name)
-    name_array = filename.slice(0, filename.length-4).split(" - ")
+    split_filename = filename.chomp(".mp3").split(" - ")
   end
 end
